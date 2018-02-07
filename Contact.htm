@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html data-livestyle-extension="available"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+
+      
+      .jumbotron {
+        background: url(http://wallpapercave.com/wp/NtODnYY.jpg) no-repeat center center;
+        background-size: cover;
+        height: 800px;
+      }
+
+      /* nav bar style set up */
+      .header {
+        background-color: #333;
+      }
+
+      .nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 0;
+      }
+
+       ul {
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+        font-family: 'Raleway', sans-serif;
+
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+
+      li a:hover {
+        text-decoration:underline;
+      }
+
+      /* the main style of the whole page */
+
+      .main {
+        position: relative;
+        top: 180px;
+        text-align: center;
+      }
+
+      .main h1 {
+        color: #333;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 70px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+      }
+    
+      /* Button setup */
+
+      .btn-primary {
+        background-color: #333;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        padding: 16px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid gray; 
+      }
+
+      .btn-primary:hover {
+      background-color: black; 
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      /* responsiveness for button */
+
+      @media (min-width:720px) {
+        .btn-default {
+          padding: 15px 50px;
+        }
+      }
+
+      /* contact info setup */
+
+      .padding{
+        background-color: #333;
+        margin: 0;
+        padding: 20px 0;
+
+      }
+
+      .supporting {
+        padding-top: 80px;
+        padding-bottom: 100px;
+      }
+
+
+      .supporting .col {
+        float: left;
+        width: 33%;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+      }
+
+      .supporting img {
+        height: 32px;
+      }
+
+      .supporting h2 {
+        font-weight: 600;
+        font-size: 23px;
+        text-transform: uppercase;
+      }
+
+      .supporting a{
+        color:black;
+      }
+
+      .supporting p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 50px;
+        margin-bottom: 40px;
+       
+      }
+
+      /* map setup */
+
+      
+      .map {
+        object-position:center
+        width: 70%;
+        height: 100%;
+        display:table;
+        margin:0px auto 20px auto;
+      }
+      
+      /* responsive map */
+      .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        
+      }
+      .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        
+      } 
+      
+
+      /* footer setup */
+
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+      }
+
+      .footer p {
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-size: 11px;
+      }
+
+      /* responsiveness for main area of the site */
+
+      @media (max-width: 500px) {
+        .main h1 {
+          font-size: 50px;
+          padding: 0 40px;
+        }
+
+        .supporting .col {
+          width: 100%;
+        }
+        ul li {
+         width: 100%;
+       }  
+      }
+
+    </style>
+  
+</head>
+  <body style="zoom: 1;">
+
+  <!-- header setup with links to other pages -->
+
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="HomePage.html">Home  </a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="Gallery_page.html">Gallery</a></li>
+          <li><a href="Contact.htm">Contact </a></li>
+          <li><a href="Subscribe_Page.html">Subscribe </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- setting up the image and button on the page -->
+
+    <div class="jumbotron">
+      <div class="container">  
+        <div class="main">
+          <h1>Bring art to your life</h1>
+          <a class="btn-primary" href="Subscribe_Page.html">Subscribe to our news</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- the gray line after the picture -->
+
+    <div class="padding">
+    </div>
+
+    <!-- the contact info with interactive buttons for calling and emailing -->
+
+    <div class="supporting">
+      <div class="container">
+        <div class="col">
+          <img src="http://www.clker.com/cliparts/f/D/Z/i/d/G/phone-logo-md.png">
+          <h2>Call me</h2>
+          <a href="tel:+79156777890">Tel no:+79156777890</a>
+          <p> and ask for Teodore Van Gogh.</p>   
+        </div>
+        <div class="col">
+          <img src="https://image.freepik.com/free-icon/email-envelope-outline-shape-with-rounded-corners_318-49938.png">
+          <h2>Email me</h2>
+          
+          <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">VincentVan@iCloud.com</a>
+          <p> My E-mail</p>
+          
+        </div>
+        <div class="col">
+          <img src="https://www.hopper.com/assets/map_logo-9bf88443535f0e7692bf863da2f09e9c.png">
+          <h2>Find me</h2>
+          <p>Museumplein 6, 1071 DJ Amsterdam, Netherlands</p>
+        </div>
+      </div>
+    </div>
+   
+     <!-- map setup -->
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9746.647868392984!2d4.8810756!3d52.3584159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc22828aef97cc51a!2sVan+Gogh+Museum!5e0!3m2!1sen!2suk!4v1462894943012" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <!-- footer setup with the copy sign -->
+    
+    <div class="footer">
+      <div class="container">
+        <p>© Vincent</p>
+      </div>
+    </div>
+    
+  
+</body>
+</html>

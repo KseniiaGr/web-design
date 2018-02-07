@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet"href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>Van Gogh gallery</title>
+    <style>
+
+/* the default style */
+
+html, body {
+  background-color: #cccdce;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0; 
+}
+
+/* header style where the title appears */
+
+.header {
+  background-color:#fff; 
+  height: 140px; 
+  text-align: center; }
+
+.header h1 {
+  color:black;
+  font-size: 32px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  top: 44px;
+}
+
+/* nav bar style setup */
+
+.nav{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.nav ul {
+  margin: 0 0 10px;
+  text-align: center;
+  padding:20px 0px;
+  
+}
+
+.nav li {
+  -webkit-transition:color 0.25s;
+  transition:color 0.25s;
+  display:inline;
+  text-transform:uppercase;
+  color:white;
+  padding:0px 10px;
+}
+.nav li a{
+  color:white;
+}
+
+/* style when mouse hovers over the links in nav bar */
+
+.nav li:hover {
+  color: #31363d;
+  cursor: pointer; 
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+/* style for images */
+
+.row {
+  margin-top: 30px;
+}
+
+/* style setup for footer */
+
+.footer{
+  text-align:left;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+/* universal size of the images */
+
+img{
+  height: 360px;
+    width: 480px;
+}
+
+/* responsiveness for the images */
+
+@media (max-width: 500px) {
+  .row {
+    margin-top: 0;
+  }
+  .img-responsive {
+    margin-bottom: 20px;
+  }
+}
+    </style>
+  </head>
+  
+  <!-- title of the page -->
+
+  <body>
+    <div class="header">
+      <h1>Van Gogh gallery</h1>
+    </div>
+
+  <!-- nav bar -->
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="HomePage.html">Home  </a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="Gallery_page.html">Gallery</a></li>
+          <li><a href="Contact.htm">Contact </a></li>
+          <li><a href="Subscribe_Page.html">Subscribe </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- images included on the page -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1920px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" />
+        <p> "Starry night" </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg">
+        <p> "Almond blossoms" </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="http://www.paintinghere.org/UploadPic/Vincent%20van%20Gogh/big/Starry%20Night%20Over%20the%20Rhone%202.jpg">
+        <p> "Starry night over the Rhone" </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Roses_-_Vincent_van_Gogh.JPG">
+        <p> "Vase with pink roses" </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="http://lh3.ggpht.com/tRUHwDHB4s6KAF5c5WbgkUdstJntlqCZ7NhCz_qyuZgH2Pc98fmaSjM2lOnpSw=s1200">
+        <p> "A pair of shoes" </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="http://lh6.ggpht.com/LjmoRnUy7V8-2d4v6Jf-DP8oetaPzgzf-DwYIWlRUK8ArqLB0s2gGSxA72pt=s1200">
+        <p> "The olive trees" </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"><img class="img-responsive" src="http://lh5.ggpht.com/Go9QucSIS0OASfQar5o3ziLZFJfpbzoEURXvSL2vpu9B8yvvarl7qhrZQKs=s1200">
+        <p> "Irises" </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="http://files.clickweb.home.pl/homepl14761/image/gogh_pole_cyprysy.jpg">
+        <p> "Wheat Field with Cypresses" </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Vincent_van_Gogh_-_Van_Gogh's_Bedroom_in_Arles_-_Google_Art_Project.jpg">
+        <p> "Bedroom in Arles" </p>
+        </div> 
+      </div>
+    </div>
+
+    <!-- footer setup with the copy sign -->
+
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Vincent</p>
+      </div>
+    </div>
+
+  </body>
+</html>

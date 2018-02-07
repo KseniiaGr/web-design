@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html>
+<head> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="nav.css">
+  <style> 
+
+  /* default body style */
+
+    html,body{
+      margin:0;
+      padding:0;
+      font-family:'Open Sans',sans-serif;
+    }
+
+    /* header with nav bar style */
+
+    .header {
+        background-color: #333;
+      }
+
+      .nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 0;
+      }
+
+       ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* link to the page style change when mouse hover over */
+
+      li a:hover {
+        text-decoration:underline;
+      }
+
+    .container{
+      max-width:940px;
+      margin:0 auto;
+    }
+
+    /* button over the video */
+
+    .btn{
+      background-color: #333;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        padding: 16px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid gray; 
+    }
+
+    /* button over the video when hovered */
+
+    .btn:hover {
+      background-color: black; 
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      
+    /* video section style */
+
+    .video-section{
+      width:100%;
+      text-align:center;
+      color:#fff;
+      
+    }
+    video{
+      position: relative;
+      width: 100%;
+      z-index: -1;
+    }
+
+    /* the message over the video */
+
+    .cross-section{
+      width: inherit;
+      position: absolute;
+      padding-top: 20%;
+    }
+
+    h1{
+      color:#fff;
+      size:50px;
+      text-shadow:0 2px 3px rgba(0,0,0,.4);
+      padding: 0 40px;
+    }
+
+    /* footer style setup */
+
+    .footer{
+      background-color: #333;
+      font-family: 'Raleway', sans-serif;
+      padding: 20px;
+      color:white;
+      margin-top:-1%;
+    }
+
+   /* responsiveness for the message */
+
+    @media (max-width: 960px) {
+    .video-section h1 { 
+      font-size: 32px; 
+    }
+    .nav {
+      display:flex;
+    }
+    } 
+    @media (max-width: 600px){
+      .cross-section{
+        padding-top: 10%;
+      }
+      ul li {
+         width: 100%;
+       }  
+    }
+    </style>
+    </head>
+
+    <body> 
+
+    <!-- nav bar setup -->
+
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="HomePage.html">Home  </a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="Gallery_page.html">Gallery</a></li>
+          <li><a href="Contact.htm">Contact </a></li>
+          <li><a href="Subscribe_Page.html">Subscribe </a></li>
+        </ul>
+      </div>
+
+      <!-- video and message with button over it -->
+    </div>
+      <div class="video-section">
+      <div class="cross-section">
+      <h1>Welcome to the world of Vincent Van Gogh</h1>
+          <p><a class="btn" href="Gallery_page.html">view gallery</a></p>
+        </div>
+       <video autoplay muted loop>
+        <source src="123.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+
+    <!-- footer with the copy sign setup -->
+
+     <div class="footer"> 
+     <div class="container">
+      <p>&copy; Vincent</p>
+     </div>
+   </div>
+   
+ </body>
+ </html>

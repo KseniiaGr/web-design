@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet"href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>About Van Gogh</title>
+    <style>
+    /* defult style for the page */
+
+html, body {
+  background-color: #cccdce;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0; 
+}
+
+/* header with the page title */
+.header {
+  background-color:#fff; 
+  height: 140px; 
+  text-align: center; }
+
+.header h1 {
+  color:black;
+  font-size: 32px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  top: 44px;
+}
+
+/* nav bar style */
+
+.nav{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.nav ul {
+  margin: 0 0 10px;
+  text-align: center;
+  padding:20px 0px;
+  
+}
+
+.nav li {
+  -webkit-transition:color 0.25s;
+  transition:color 0.25s;
+  display:inline;
+  text-transform:uppercase;
+  color:white;
+  padding:0px 10px;
+}
+.nav li a{
+  color:white;
+}
+
+/* nav bar style when hovered over */
+
+.nav li:hover {
+  color: #31363d;
+  cursor: pointer; 
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+/* column section style */
+
+.row {
+  margin-top: 30px;
+}
+
+/* footer style */
+
+.footer{
+  text-align:left;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+/* images common style */
+
+img{
+  height: 360px;
+  width: 480px;
+  padding-bottom: 20px;
+}
+
+/* responsiveness of the site */
+
+@media (max-width: 500px) {
+  .row {
+    margin-top: 0;
+  }
+  .img-responsive {
+    margin-bottom: 20px;
+  }
+
+}
+    </style>
+  </head>
+  
+  <body>
+
+  <!-- title of the page -->
+
+    <div class="header">
+      <h1>About Vincent Van Gogh</h1>
+    </div>
+
+  <!-- nav bar setup -->
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="HomePage.html">Home  </a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="Gallery_page.html">Gallery</a></li>
+          <li><a href="Contact.htm">Contact </a></li>
+          <li><a href="Subscribe_Page.html">Subscribe </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- information and images setup -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" />
+        </div>
+
+        <div class="col-md-4">
+        <h1> Idea development </h1>
+        <p>For my project I chose one of my favourite painters, Vincent William van Gogh. I decided to play around with the concept of him living in our world right now and how his promotional site would look like. For this purpose I choose the minimalistic design for all of the pages on the website, the main colours are white, gray and dark gray, to represent his minimalism in life. Moreover, the colours of his pictures shine more in the light gray background (see gallery page). </p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="http://uploads8.wikiart.org/images/vincent-van-gogh/self-portrait-with-a-grey-felt-hat-1887.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+        <h1> What I learned </h1>
+        <p>I had never used any internet based programming languages before, so for this corse I made a point to learn basic HTML, CSS and JAVASript. I believe, that by completing projects on codecademy helped me to understand the way the syntaxysis work and remember the basic styling ways for CSS. I also spend a lot of time figuring out the way bootstrap works, in order for my site to look professional and be responsive. For some of my pages (gallery, contact) I used templates from codecademy as well, tempering it for my needs. Outside of the course I found out the way google maps behave on the web page, in addition to instant links to the email and call options. I also used JAVAScript to make a subscribe prompt on the subscribe page, to make it more responsive.</p>
+        </div>
+
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg">
+        </div>
+
+        <div class="col-md-4">
+        <h1> What difficulties I overcame</h1>
+        <p>For the home page I decided to put a beautiful clip from the film about van Gogh on the loop, so people who first see his pictures had an idea about him. Unfortunately, it proved to be a very ambitious idea and it took me a lot of time to correctly style the message and the button over the video.For that purpose I had to recearch how "z-index" work and use "@media" to make it responsive. I also spend a lot of time on the map possitioning, as after making it responsive, the style got "stuck". I managed to center it using the display:table.</p>
+        </div>
+      </div>
+
+        <div class="row">
+        <div class="col-md-4"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Van_Gogh_Self-Portrait_with_Straw_Hat_1887-Detroit.jpg">
+        
+        </div>
+        <div class="col-md-4">
+        <h1> Evaluation </h1>
+        <p>During my project I managed to meet all the requirements specified in the "Web Design Brief". I completed the four pages required (home, about, contact and gallery) and added the subscribe page. However if I had a little bit more time, I would like to be able to make a "hamburger" option for my nav bar, to make it easier to use for mobile users. Moreover I would try to go into more depth with JAVAScript and create some condotions for the subscribe page, for E.G. the code should be able to see if the email entered is right or with mistakes inside. </p>
+        </div>
+        <div class="col-md-4"><img class="img-responsive" src="http://uploads0.wikiart.org/images/vincent-van-gogh/self-portrait-as-an-artist-1888.jpg">
+        
+        </div> 
+      </div>
+    </div>
+
+    <!-- footer with the copyright sign -->
+
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Vincent</p>
+      </div>
+    </div>
+
+  </body>
+</html>
